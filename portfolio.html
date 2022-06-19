@@ -7,105 +7,167 @@
         <title>Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body class="page">
         <!--Шапка сайта-->
         <header class="page-header">
-            <a href="./portfolio.html" class="logo"><span>Web</span>Studio</a>
 
-            <nav>
-                <ul class="site-nav">
-                    <li><a class="link" href="./index.html">Студия</a></li>
-                    <li><a class="link current" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="link" href="/">Контакты</a></li>
+            <div class="container navigation">
+                
+                <a href="./portfolio.html" class="logo"><span>Web</span>Studio</a>
+
+                <nav>
+                    <ul class="site-nav">
+                        <li class="item"><a class="link" href="./index.html">Студия</a></li>
+                        <li class="item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
+                        <li class="item"><a class="link" href="/">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="contact-nav">
+                    <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="item"><a class="link" href="tel:+380961111111">+380961111111</a></li>
                 </ul>
-            </nav>
-
-            <ul class="contact-nav">
-                <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="link" href="tel:+380961111111">+380961111111</a></li>
-            </ul>   
-       
+            </div>
         </header>
+        
         <main>
             <section class="portfolio">
                 <h1 style="display:none;">Портфолио</h1>
             </section>
-            <!--Кнопки выбора-->
-            <section class="prime">
-                <ul class="prime-btn-list">
-                    <li><button class="button primary" type="button">Все</button></li>
-                    <li><button class="button primary" type="button">Веб-сайты</button></li>
-                    <li><button class="button primary" type="button">Приложения</button></li>
-                    <li><button class="button primary" type="button">Дизайн</button></li>
-                    <li><button class="button primary" type="button">Маркетинг</button></li>
 
-                </ul>
-            
+            <!--Кнопки выбора-->
+
+            <section class="prime">
+
+                <div class="container">
+                    <ul class="prime-btn-list">
+                        <li><button class="button primary" type="button">Все</button></li>
+                        <li><button class="button primary" type="button">Веб-сайты</button></li>
+                        <li><button class="button primary" type="button">Приложения</button></li>
+                        <li><button class="button primary" type="button">Дизайн</button></li>
+                        <li><button class="button primary" type="button">Маркетинг</button></li>
+                    </ul>
+                </div>
+                
                 <!--Проекты-->
-            
-                <ul class="prime-list">
-                    <li class="prime-item">
-                        <a><img src="./images/1.jpg" alt="Веб-сайт" width="370"></a>
-                        <h2 class="prime-title-two">Технокряк</h2>
-                        <p class="prime-after-title-two">Веб-сайт</p>
-                    </li>
-                    <li>
-                        <a><img src="./images/2.jpg" alt="Постер" width="370"></a>
-                        <h2 class="prime-title-two"> Постер New Orlean vs Golden Star</h2>
-                        <p class="prime-after-title-two">Дизайн</p>
-                    </li>
-                    <li>
-                        <a><img src="./images/3.jpg" alt="Ресторан" width="370"></a>
-                        <h2 class="prime-title-two"> Ресторан Seafood</h2>
-                        <p class="prime-after-title-two">Приложение</p>
-                    </li>
-                    <li>
-                        <a><img src="./images/4.jpg" alt="Наушники" width="370"></a>
-                        <h2 class="prime-title-two"> Проект Prime</h2>
-                        <p class="prime-after-title-two">Маркетинг</p>
-                    </li>
-                    <li>
-                        <a><img src="./images/5.jpg" alt="Коробки" width="370"></a>
-                        <h2 class="prime-title-two"> Проект Boxes</h2>
-                        <p class="prime-after-title-two">Приложение</p>
-                    </li>
-                    <li>
-                        <a><img src="./images/6.jpg" alt="Монитор" width="370"></a>
-                        <h2 class="prime-title-two"> Inspiration has no Borders</h2>
-                        <p class="prime-after-title-two">Веб-сайт</p>
-                    </li>
-                    <li>
-                        <a><img src="./images/7.jpg" alt="Издание" width="370"></a>
-                        <h2 class="prime-title-two"> Издание Limited Edition</h2>
-                        <p class="prime-after-title-two">Дизайн</p>
-                    </li>
-                    <li>
-                        <a><img src="./images/8.jpg" alt="Бирка" width="370"></a>
-                        <h2 class="prime-title-two"> Проект LAB</h2>
-                        <p class="prime-after-title-two">Маркетинг</p>
-                    </li>
-                    <li>
-                        <a><img src="./images/9.jpg" alt="Ноутбук" width="370"></a>
-                        <h2 class="prime-title-two"> Growing Business</h2>
-                        <p class="prime-after-title-two">Приложение</p>
-                    </li>
-                </ul>                              
+                <div class="container">
+
+                    <ul class="prime-list-project">
+
+                        <li class="prime-item-project">
+                            
+                            <a><img src="./images/1.jpg" alt="Веб-сайт" width="370"></a>
+
+                            <div class="picture">
+                                <h2 class="prime-title-two">Технокряк</h2>
+                                <p class="prime-after-title-two">Веб-сайт</p>
+                            </div>
+                        </li>
+
+                        <li class="prime-item-project">
+                               
+                            <a><img src="./images/2.jpg" alt="Постер" width="370"></a>
+
+                            <div class="picture">
+                                <h2 class="prime-title-two"> Постер New Orlean vs Golden Star</h2>
+                                <p class="prime-after-title-two">Дизайн</p>
+                            </div>
+                        </li>
+
+                        <li class="prime-item-project">
+                             
+                            <a><img src="./images/3.jpg" alt="Ресторан" width="370"></a>
+
+                            <div class="picture">
+                                <h2 class="prime-title-two"> Ресторан Seafood</h2>
+                                <p class="prime-after-title-two">Приложение</p>
+                            </div>
+                        </li>
+
+                        <li class="prime-item-project">
+                                 
+                            <a><img src="./images/4.jpg" alt="Наушники" width="370"></a>
+
+                            <div class="picture">  
+                                <h2 class="prime-title-two"> Проект Prime</h2>
+                                <p class="prime-after-title-two">Маркетинг</p>
+                            </div>
+                        </li>
+
+                        <li class="prime-item-project">
+                             
+                            <a><img src="./images/5.jpg" alt="Коробки" width="370"></a>
+
+                            <div class="picture">
+                                <h2 class="prime-title-two"> Проект Boxes</h2>
+                                <p class="prime-after-title-two">Приложение</p>
+                            </div>
+                        </li>
+
+                        <li class="prime-item-project">
+                           
+                            <a><img src="./images/6.jpg" alt="Монитор" width="370"></a>
+
+                            <div class="picture">
+                                <h2 class="prime-title-two"> Inspiration has no Borders</h2>
+                                <p class="prime-after-title-two">Веб-сайт</p>
+                            </div>
+                        </li>
+
+                        <li class="prime-item-project">
+                              
+                            <a><img src="./images/7.jpg" alt="Издание" width="370"></a>
+
+                            <div class="picture">
+                                <h2 class="prime-title-two"> Издание Limited Edition</h2>
+                                <p class="prime-after-title-two">Дизайн</p>
+                            </div>
+                        </li>
+
+                        <li class="prime-item-project">
+                            
+                            <a><img src="./images/8.jpg" alt="Бирка" width="370"></a>
+
+                            <div class="picture">
+                                <h2 class="prime-title-two"> Проект LAB</h2>
+                                <p class="prime-after-title-two">Маркетинг</p>
+                            </div>
+                        </li>
+
+                        <li class="prime-item-project">
+                           
+                            <a><img src="./images/9.jpg" alt="Ноутбук" width="370"></a>
+
+                            <div class="picture">
+                                <h2 class="prime-title-two"> Growing Business</h2>
+                                <p class="prime-after-title-two">Приложение</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>                              
                 
             </section>
         </main>
+
         <!--Футер-->
         <footer class="page-footer">
-            <a href="/portfolio.html" class="logo"><span>Web</span>Studio</a>
-            <address class="adress">
-                <p>г. Киев, пр-т Леси Украинки, 26</p>
-            </address>
-            <ul class="contact-navigation">
-                <li><a class="link-nav" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="link-nav" href="tel:+380961111111">+380961111111</a></li>
-            </ul>
+
+            <div class="container">
+
+                <a href="/portfolio.html" class="logo"><span>Web</span>Studio</a>
+                <address class="adress">
+                    <p>г. Киев, пр-т Леси Украинки, 26</p>
+                </address>
+
+                <ul class="contact-navigation">
+                    <li><a class="link-nav" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="link-nav" href="tel:+380961111111">+380961111111</a></li>
+                </ul>
+            </div>
 
         </footer>
     
