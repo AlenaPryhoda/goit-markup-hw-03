@@ -28,8 +28,6 @@
 
 /*  */
 body {
-    margin: 0;
-
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
 }
@@ -40,14 +38,16 @@ h2,
 h3,
 p {
     margin: 0;
-   
-
 }
 
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.section {
+    padding: 94px 0;
 }
 
 /* button veb-studio */
@@ -79,12 +79,21 @@ ul {
 }
 
 /*page-portfolio button*/
+
+.button-primary {
+    margin-right: 8px;
+}
+
+.button-primary:last-child {
+    margin: 0;
+}
+
 .button.primary {
     display: inline-block;
     border-radius: 4px;
     padding: 6px 22px;
     min-height: 38px;
-    margin-right: 8px;
+    
     text-align: center;
     border: 1px solid transparent;
 
@@ -102,14 +111,11 @@ ul {
    color: var(--white-color);
    background-color: var(--accent-color); 
 }
-.button:last-child {
-    margin-right: 0;
-}
 
 .prime-btn-list {
    display: flex; 
    justify-content: center;
-    
+    margin-bottom: 50px;
 }
 
 /* Portfolio content */
@@ -117,6 +123,8 @@ ul {
 .prime-list-project {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-top: -30px;
 }
 
 .prime-item-project {
@@ -124,22 +132,10 @@ ul {
     margin-top: 30px;
 }
 
-.prime-item-project:nth-child(3n) {
-    margin-right: 0;
-}
-
-.prime-item-project:nth-child(-n+3) {
-	margin-top: 0;
-}
-
 .picture {
-    display: flex;
+    padding: 20px 24px;
     border: 1px solid #eeeeee;
-    width: 370px;
-    flex-wrap: wrap;
-   
-    flex-direction: column;
-    text-align: left;
+    border-top: none;
 }
 
 .picture:nth-child(3n) {
@@ -153,7 +149,7 @@ ul {
     margin: 0 auto;
     padding: 0 15px;
 
-    /* outline: 2px solid tomato; */
+    /* outline: 2px solid tomato;  */
 }
 
 /* hero */
@@ -184,6 +180,9 @@ ul {
 .prime,
 .about {
     background-color: var(--white-color);
+}
+.prime-title {
+    margin-bottom: 10px;
 }
 
 .prime-title,
@@ -227,7 +226,7 @@ ul {
 }
 
 .prime {
- padding: 94px 0;
+ padding-bottom: 47px;
 }
 
 /* prime-list */
@@ -241,7 +240,6 @@ ul {
    
 }
 
-/* Portfolio */
 
 .prime-item:nth-child(4n) {
     margin-top: 0;
@@ -268,43 +266,28 @@ img {
     display: flex;
     
 }
-.container-team {
-    display: flex;
-    margin-right: 30px;
 
-
-}
 .about {
-    padding: 94px 0;
-}
-.team .container {
-    flex-direction: column;
-    
-}
-.container-team {
-    padding-bottom: 30px;
+    padding-top: 47px;
 }
 
 .about-title {
-
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 }
-.about-list {
-    margin: 0;
-}
+
 .about-item {
     margin-right: 30px;
-    margin-top: 50px;
+
 }
 
 /* section team */
 
 .team {
-   padding: 94px 0;
     background-color: var(--background-team-color);
 }
 
@@ -326,34 +309,24 @@ img {
     letter-spacing: 0.03em;
 }
 .team-after-subject {
-    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 }
-.foto {
-    margin-bottom: 30px;
-}
-.container .team-list {
-    display: flex;
-    text-align: center;
-}
-.team .container {
-   flex-direction: column;
+.team-item {
+    flex-basis: calc((100%-120px)/4);
+    margin: 15px;
 }
 
-.container-team {
-   
+.container .team-list {
     display: flex;
-    flex-wrap: wrap;
+    margin: -15px;
     text-align: center;
-    flex-direction: column;
-   
-    
+    background-color: var(--background-team-color);
 }
-.container-team:not(:nth-child(4n)) {
-    margin-right: 0;
+.container-team {
+    padding: 30px 0;
 }
 
 /* header */
@@ -394,9 +367,7 @@ span {
 .site-nav .link {
 
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
+    
     color: var(--second-color);
     text-decoration: none;
     font-weight: 500;
@@ -420,9 +391,6 @@ span {
     line-height: 1.14;
 }
 
-.contact-nav .link {
-
-}
 .contact-nav {
 
     display: flex;
@@ -437,7 +405,7 @@ span {
 }
 
 .contact-nav .link {
-
+    padding: 32px 0;
     color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 500;
@@ -459,19 +427,22 @@ span {
 .adress {
     margin-bottom: 9px;
 }
-.link-nav {
+
+.link-navigation {
     margin-bottom: 9px;
 }
-.link-nav:not(:nth-child(2n)) {
-    margin-bottom: 9px;
+.link-navigation:last-child {
+    margin: 0;
 }
 
 .page-footer {
+    display: block;
     padding: 60px 0;
     background-color: var(--background-hero-color);
 }
 
  .page-footer .logo  {
+    display: block;
     margin-bottom: 20px;
     color: var(--white-color);
 }
